@@ -61,7 +61,7 @@ limitations under the License.
       return resin.models.device.get(params.uuid).then(function(device) {
         return resin.models.device.getStatus(device).then(function(status) {
           device.status = status;
-          return console.log(visuals.table.vertical(device, ["$" + device.name + "$", 'id', 'device_type', 'status', 'is_online', 'ip_address', 'application_name', 'last_seen', 'uuid', 'commit', 'supervisor_version', 'is_web_accessible', 'note', 'os_version']));
+          return console.log(visuals.table.vertical(device, ["$" + device.name + "$", 'id', 'device_type', 'status', 'is_online', 'ip_address', 'application_name', 'last_seen', 'uuid', 'commit', 'supervisor_version', 'is_web_accessible', 'note', 'os_version', 'dashboard_url']));
         });
       }).nodeify(done);
     }

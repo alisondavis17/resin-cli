@@ -99,6 +99,7 @@ exports.info =
 					'is_web_accessible'
 					'note'
 					'os_version'
+					'dashboard_url'
 				]
 		.nodeify(done)
 
